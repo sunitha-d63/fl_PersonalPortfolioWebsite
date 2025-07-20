@@ -1,0 +1,17 @@
+{% extends 'layout/base.html' %}
+{% block title %}{{ project.title }}{% endblock %}
+{% block head %}{{ super() }}<link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">{% endblock %}
+{% block content %}
+<div class="bg-section">
+  <div class="container py-5">
+    <h1>{{ project.title }}</h1>
+    <p>{{ project.description }}</p>
+    <p>Tags:
+      {% for t in project.tags %}
+        <a href="{{ url_for('projects_page') }}?tag={{ t }}" class="badge bg-secondary text-decoration-none">{{ t }}</a>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </p>
+    <a href="{{ url_for('projects_page') }}">← Back to Projects</a>
+  </div>
+</div>
+{% endblock %}

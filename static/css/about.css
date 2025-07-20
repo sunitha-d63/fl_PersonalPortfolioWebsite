@@ -1,0 +1,28 @@
+.about-bg {
+  background-color: #f0f8ff;
+  padding: 60px 0;
+}
+
+.about-image {
+  max-width: 500px;
+  height: auto;
+}
+
+.about-text h1 {
+  margin-bottom: 1rem;
+}
+.about-text h3 {
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    padding-left: 30px;
+  }
+}

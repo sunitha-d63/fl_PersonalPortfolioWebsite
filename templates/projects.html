@@ -1,0 +1,33 @@
+{% extends 'layout/base.html' %}
+{% block title %}Projects{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+{% block content %}
+<div class="bg-section">
+  <div class="container py-5">
+    <h1>Projects{% if tag %} filtered by “{{ tag }}”{% endif %}</h1>
+    <div class="row">
+      {% for project in projects %}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 project-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fs-4 mb-3">{{ project.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Languages: {{ project.languages }}</h6>
+            <p class="flex-grow-1 fs-5">{{ project.description }}</p>
+            <p class="mt-3">
+              {% for t in project.tags %}
+              <a href="{{ url_for('projects_page') }}?tag={{ t }}" class="badge bg-secondary fs-5">{{ t }}</a>
+              {% endfor %}
+            </p>
+            <a href="{{ url_for('project_detail', slug=project.slug) }}"
+               class="btn btn-primary mt-auto text-white">View Details</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

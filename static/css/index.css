@@ -1,0 +1,26 @@
+.hero-container {
+  background-color: #e0f7fa;
+  padding: 40px;
+  border-radius: 8px;
+}
+.hero-image {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Enable responsive layout using media queries */
+@media (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+}
