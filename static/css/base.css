@@ -4,9 +4,8 @@ body {
   padding: 0;
 }
 
-/* Example: full-width colored section */
 .bg-section {
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: #b7b8bb;
   padding: 60px 0;
 }

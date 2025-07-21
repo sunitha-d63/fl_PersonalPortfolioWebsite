@@ -1,10 +1,10 @@
 .about-bg {
-  background-color: #f0f8ff;
+  background-color: rgb(207, 205, 205);
   padding: 60px 0;
 }
 
 .about-image {
-  max-width: 500px;
+  max-width: 700px;
   height: auto;
 }
 

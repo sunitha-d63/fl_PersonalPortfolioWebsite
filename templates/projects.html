@@ -5,13 +5,16 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
 {% endblock %}
 {% block content %}
-<div class="bg-section">
+<div class="bg-dark">
   <div class="container py-5">
     <h1>Projects{% if tag %} filtered by “{{ tag }}”{% endif %}</h1>
     <div class="row">
       {% for project in projects %}
       <div class="col-md-4 mb-4">
         <div class="card h-100 project-card">
+          {% if project.image_url %}
+          <img src="{{ project.image_url }}" class="card-img-top" alt="{{ project.title }}">
+          {% endif %}
           <div class="card-body d-flex flex-column">
             <h5 class="card-title fs-4 mb-3">{{ project.title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">Languages: {{ project.languages }}</h6>
@@ -22,7 +25,7 @@
               {% endfor %}
             </p>
             <a href="{{ url_for('project_detail', slug=project.slug) }}"
-               class="btn btn-primary mt-auto text-white">View Details</a>
+               class="btn btn-secondary mt-auto text-white">View Details</a>
           </div>
         </div>
       </div>
@@ -30,4 +33,7 @@
     </div>
   </div>
 </div>
+
+
+
 {% endblock %}

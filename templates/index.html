@@ -3,21 +3,21 @@
 {% block head %}{{ super() }}<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">{% endblock %}
 
 {% block content %}
-<div class="bg-section">
-  <div class="container hero-container">
+<div class="">
+  <div class="container hero-container text-white">
     <div class="hero-text">
       <h1 class="mb-3">Hi, I'm Sunitha</h1>
-      <h2 class="mb-4 text-primary">Python Full stack Developer</h2>
+      <h2 class="mb-4 text-dark">Python Full stack Developer</h2>
       <p class="fs-4">Hi, I am looking for an innovative and challenging software development and testing environment which can fully utilize my capabilities and to be a dynamic software professional working systematically, building good logic to be globally competitive following the perfect principles of time and quality techniques.</p>
       <div class="mt-4">
-        <a href="#" class="btn btn-outline-secondary me-2">Download CV</a>
-        <a href="#" class="btn btn-link"><i class="bi bi-facebook fs-4"></i></a>
-        <a href="#" class="btn btn-link"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="btn btn-outline-dark me-2">Download CV</a>
+        <a href="#" class="btn btn-outline-dark"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="btn btn-outline-dark"><i class="bi bi-instagram fs-5"></i></a>
       </div>
     </div>
     <div class="hero-image">
       <img src="{{ url_for('static',filename='images/img1.jpeg') }}"
-           class="img-fluid  border border-primary" alt="Profile">
+           class="img-fluid  border " alt="Profile">
     </div>
   </div>
 </div>

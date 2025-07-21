@@ -1,16 +1,14 @@
-/* Full-width color section */
+
 .contact-section {
   padding: 60px 0;
   background-color: #eef6fc;
 }
 
-/* Card-like form elevate on background */
 .contact-card {
   background: #fff;
   border-radius: 8px;
 }
 
-/* Inputs styling: subtle border and focus effect */
 .contact-form .form-control {
   border: none;
   border-bottom: 2px solid #ccc;
@@ -28,19 +26,14 @@
   font-weight: 600;
 }
 
-/* Submit button custom color */
 .contact-form button {
-  background-color: #007bff;
-  border-color: #007bff;
   color: white;
 }
 
-/* Elevated shadow for pop-out effect */
 .shadow-lg {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Responsive padding tweaks */
 @media (max-width: 576px) {
   .contact-card {
     padding: 20px;

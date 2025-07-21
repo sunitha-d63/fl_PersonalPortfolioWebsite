@@ -1,14 +1,14 @@
 .hero-container {
-  background-color: #e0f7fa;
+  background-color: gray;
   padding: 40px;
   border-radius: 8px;
 }
 .hero-image {
   max-width: 300px;
   height: auto;
+  border: none !important;
 }
 
-/* Enable responsive layout using media queries */
 @media (min-width: 768px) {
   .hero-container {
     display: flex;

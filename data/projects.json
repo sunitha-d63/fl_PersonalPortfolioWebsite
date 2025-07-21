@@ -4,20 +4,23 @@
     "title": "BurgerQueen Restaurant",
     "languages": "HTML, CSS, JavaScript, React, Bootstrap",
     "description": "Developed a comprehensive web-based application enabling customers to seamlessly browse menus, reserve tables, and place orders online. The system also empowers restaurant staff to efficiently manage reservations, update menu offerings, and oversee order processing, designing user-friendly forms with validation.",
-    "tags": ["React", "Bootstrap", "Web"]
+    "tags": ["React", "Bootstrap", "Web"],
+    "image_url": "/static/images/img4.jpeg"
   },
   {
-    "slug": "Plant Shop",
-    "title": "Plant Shop",
+    "slug": "Pet Shop",
+    "title": "Pet Shop",
     "languages": "Python, Flask",
     "description": "Developed a user-centric web application designed to streamline the pet adoption process by connecting potential adopters with animals in need of loving homes. The platform offers detailed pet profiles, facilitates adoption applications, and provides resources for responsible pet ownership.",
-    "tags": ["Flask", "Backend"]
+    "tags": ["Flask", "Backend"],
+    "image_url": "/static/images/img6.jpeg"
   },
   {
     "slug": "Plant Shop",
     "title": "Plant Shop",
     "languages": "Node.js, Express",
     "description": "Developed a comprehensive web application designed to facilitate the browsing, purchasing, and care of indoor and outdoor plants. The platform offers a user-friendly interface for customers to explore a diverse range of plants, categorized by type, care requirements, and suitability for indoor or outdoor environments.",
-    "tags": ["Node", "Web"]
+    "tags": ["Node", "Web"],
+    "image_url": "/static/images/img5.jpeg"
   }
 ]
